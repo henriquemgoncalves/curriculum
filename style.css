@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #f6f6f6;
+    --cor-secundaria: #0bdcf8;
+    --fonte-principal: "PT Sans", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #282A3A;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.escrita__cabecalho{
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    color: var(--cor-primaria);
+}
+
+.container__esquerdo{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    margin: 20px 100px;
+    gap: 20px;
+}
+
+.meu__nome{
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.informacoes__eu{
+    font-family: var(--fonte-principal);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.destaque__paragrafo__esquerdo{
+    color: var(--cor-secundaria);
+}
+
+.container__direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    gap: 20px;
+}
+
+.titulo__direito{
+    font-family:var(--fonte-principal);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.paragrafo__direito{
+    font-family: var(--fonte-principal);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.destaque__titulo__direito{
+    color: var(--cor-secundaria);
+}
+
+.destaque__paragrafo{
+    color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+footer{
+    padding: 15px;
+    background-color: #282A3A;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.redes__sociais{
+    margin: 0;
+    padding: 15px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.links__link{
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+.links{
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.voltar{
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.texto__sobre__mim{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.rodape__menu{
+    padding: 15px;
+    background-color: #282A3A;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+}
+
+.container__experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 150px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    gap: 20px;
+
+}
+
+.destaque__experiencia{
+    color: var(--cor-secundaria);
+}
+
+.container__cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding: 15px 100px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    gap: 20px;
+}
+
+.destaque__cursos{
+    color: var(--cor-secundaria);
+}
+
+.container__projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px 100px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    gap: 30px;
+}
+
+.paragrafo__projetos{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--cor-primaria);
+}
+
+.links__projetos{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+}
+
+
+
+@media (max-width: 969px){
+    main{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .container__esquerdo{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .container__direito{
+        width: 90%;
+    }
+
+    .container__experiencia{
+        padding: 5%;
+    }
+
+    .container__cursos{
+        padding: 5%;
+    }
+
+    .container__projetos{
+        padding: 5%;
+    }
+}
